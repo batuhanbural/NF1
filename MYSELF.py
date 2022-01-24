@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import os
-path = r'resources/irisler.jpeg'
+path = r'resources/irisler.jpeg' # Burada dosyanın asıl path'ini yapıştır. Sol panelden sağ tıkla -> copy -> absolutr path. Sonra yapıştır.
 roi = cv2.imread(path)
 gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
 gray_blur = cv2.GaussianBlur(gray, (15, 15), 1)
