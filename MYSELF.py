@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import os
-path = r'C:\important project\pythonProject\MYSELF.py'
+path = r'C:\Users\ceyda\PycharmProject\NF1\MYSELF.py'
 roi = cv2.imread(path)
 gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
 gray_blur = cv2.GaussianBlur(gray, (15, 15), 1)
