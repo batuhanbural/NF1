@@ -24,7 +24,7 @@ for label in np.unique(labels):
     labelMask = np.zeros(thresh.shape, dtype="uint8")
     labelMask[labels == label] = 255
     numPixels = cv2.countNonZero(labelMask)
-    if 500 > numPixels > 25:
+    if numPixels > 300:
         mask = cv2.add(mask, labelMask)
 cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,
                         cv2.CHAIN_APPROX_SIMPLE)
